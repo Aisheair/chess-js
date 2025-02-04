@@ -6,10 +6,14 @@
 h1{
     text-align: center;
 }
-.box{
+.box {
     width: 100%;  
     height: 100%;
     border: 1px solid black;
+}
+.pcs {
+    width: 100%;  
+    height: 100%;
 }
 #board{
     width: 550px;
