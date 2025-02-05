@@ -42,14 +42,14 @@ h1{
 @media (max-width: 768px) {
     #board {
         width: 90vw;
-        height: auto; /* Let height be determined by aspect-ratio */
-        max-width: 300px; /* Adjust this value as needed */
+        height: auto; 
+        max-width: 300px; 
     }
 }
 
 @media (max-width: 480px) {
     #board {
-        max-width: 280px; /* Smaller size for very small phones */
+        max-width: 280px; 
     }
 }
 
