@@ -21,9 +21,7 @@ h1{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     aspect-ratio: 1;
-    border: 1px solid black;  /* Border around the board */
-    margin: 0; /* Ensure no extra margin around the board */
-    padding-bottom: -10px; /* Ensure no extra padding inside the board */
+    border: 1px solid black;
 }
 .container{
     display: flex;
@@ -38,7 +36,6 @@ h1{
 .light{
     background-color: rgb(242,225,195);
 }
-
 
 
 
