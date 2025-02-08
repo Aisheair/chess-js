@@ -11,8 +11,8 @@ h1{
     height: 100%;
 }
 .caracter {
-    max-width: 90%;  
-    max-height: 90%;
+    max-width: 100%;  
+    max-height: 100%;
     display: block;
     margin: auto;
 }
@@ -38,7 +38,9 @@ h1{
 .light{
     background-color: rgb(242,225,195);
 }
-
+ .selected {
+    border: 2px solid black;
+} 
 
 
 @media (max-width: 768px) {
