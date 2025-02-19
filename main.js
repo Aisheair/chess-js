@@ -1,9 +1,15 @@
-// console.log("hi");
+import { board_def } from './board.js';
+
 const pcs = document.querySelectorAll(".pcs")
 const box = document.querySelectorAll(".box")
 
 let selectedPiece = null;//selected chess piece
 let selectedBox = null;//original box before moving
+
+document.addEventListener("DOMContentLoaded", () => {
+    board_def(); // for the board definition
+});
+
 
 //Selecting a Piece
 pcs.forEach(p => {
@@ -15,21 +21,21 @@ box.forEach(b => {
 })
 
 //You Click a Piece
-function selectPiece(event){
-    if(selectedPiece) {
+function selectPiece(event) {
+    if (selectedPiece) {
         selectedPiece.classList.remove("selected")
     }
-    selectedPiece = event.target 
+    selectedPiece = event.target
     selectedBox = selectedPiece.parentElement
-    selectedPiece.classList.add("selected"); 
+    selectedPiece.classList.add("selected");
 }
 // clicking on a box to move the selected pcs
-function movePiece(event){
+function movePiece(event) {
     if (!selectedPiece) return;
 
     const targetBox = event.currentTarget;
 
-    if (!targetBox.querySelector(".pcs")){ // if the squar is empty
+    if (!targetBox.querySelector(".pcs")) { // if the squar is empty
         targetBox.appendChild(selectedPiece); // move the piece to the new box.
         selectPiece.classList.remove("selected")
         selectedPiece = null;
